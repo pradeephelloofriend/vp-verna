@@ -89,7 +89,7 @@ class RecentDevelopmentComponent extends React.Component {
                 />}
             >
               <div className='dev-slider-box rd-badge'>
-                <span className="badge bg-white link-c-blue rounded-pill">{d.title}</span>
+                <span className="badge bg-white rounded-pill bg-c-blue">{d.title}</span>
               </div>
             </Card>
           </div>

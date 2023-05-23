@@ -86,14 +86,14 @@ const Schemes=({setLoading})=> {
     };
     return (
       <>
-        <section className="wrapper bg-light scheme-area">
+        <section className="wrapper bg-light scheme-area bg-c-orange">
           <div className="container  pt-md-11 pb-13 pb-md-10">
             <div className="row">
               <div className="col-md-12 col-lg-12 ">
                     <div className="scheme-content">
                       <div className="scheme-header mb-5 ">
                         <h4 className="display-6 mb-0 link-c-blue">Schemes</h4>
-                        <p className="lead mb-5">We strive to provide the best facilities for our village members. Some of these are listed below.</p>
+                        <p className="lead mb-5 link-c-wht">We strive to provide the best facilities for our village members. Some of these are listed below.</p>
                       </div>
                       <div className="btn-arrow offset-md-1 offset-lg-3">
                         <Button type="text" className="btn-prev " onClick={previous} ><LeftOutlined /></Button>

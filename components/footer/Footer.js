@@ -21,7 +21,7 @@ import {selectFootData} from '../../redux/footer/footSelector';
    }
      return (
          <>
-             <footer className='c-footer'>
+             <footer className='c-footer link-c-blue'>
                  <div className="container-fluid pb-2 mt-5 mt-md-5">
                      
                     <div className='f-link'>

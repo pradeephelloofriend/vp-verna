@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
 
 const ProfileComponent = () => {
   return (
@@ -13,9 +14,11 @@ const ProfileComponent = () => {
             
           </div>
           <div className='col-7'>
+          <Card className='bg-card-prof'>
+            <Card.Body>
             <div className='pf-content-block '>
-            <h4 className="display-6 mb-0 text-white">Dongurli-Thane Profile</h4>
-            <ul className='pf-ul text-white mt-3'>
+            <h4 className="display-6 mb-0">Dongurli-Thane Profile</h4>
+            <ul className='pf-ul mt-3'>
               <li>Block / Taluka :
                 <p>Satari</p>
               </li>
@@ -29,7 +32,7 @@ const ProfileComponent = () => {
                 <p>403506</p>
               </li>
             </ul>
-            <ul className='pf-ul text-white mt-3'>
+            <ul className='pf-ul mt-3'>
               <li>Area :
                 <p>6901.68 hectares</p>
               </li>
@@ -47,6 +50,9 @@ const ProfileComponent = () => {
               <li className='pf-bg-merun'>Nearest Town <p>Satari</p></li>
             </ul>  
             </div>
+            </Card.Body>
+          </Card>
+
           </div>
         </div>
         

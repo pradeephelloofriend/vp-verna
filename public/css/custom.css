@@ -1067,10 +1067,31 @@ padding-left: 0rem;
     color: white ;
 }
 .bg-c-blue{
-    background-color:#1b96c0;
+    background-color:#25225f !important;
+}
+.bg-card-prof {
+  background-color:#ffffff !important;
+  color: rgb(0, 0, 0) !important;
 }
 .link-c-blue{
-  color: #1b96c0;
+  color: #25225f;
+}
+.link-c-wht {
+  color: #ffffff !important;
+}
+.bg-c-orange{
+  background-color:#ed9a4bf5 !important;
+  color: #000 !important;
+}
+.bg-c-orange a {
+  color: #000 !important;
+}
+.bg-c-orange a:hover {
+  color: #524be0 !important;
+  text-decoration: underline;
+}
+.navbar {
+  padding: 1% 0% 1% 0% !important;
 }
 .p-relative{
   position: relative;
@@ -1595,7 +1616,7 @@ padding-left: 0rem;
     background-repeat: no-repeat;
 }
 .image-wrapper.bg-overlay:before{
-  background: #39597ac7;
+  background: #ed994bc1;
 }
 .pf-img-block{
   text-align: center;
@@ -5129,7 +5150,9 @@ margin-right: 70px;
   cursor: pointer;
 }
 .bg-light-orange{
-  background-color: #1b96c036;
+  padding: 11px 0px 12px 0px;
+  /* background-color: #1b96c036; */
+  background-color: #49d9ee;
 }
 .slider-bottom-bar .kam-topbar-left .sm-btm-right>li .anticon {
   font-size: 30px;
@@ -5177,10 +5200,10 @@ margin-right: 70px;
 	}
 }
 .abt-card{
-  border: 1px solid #1b96c0 !important;
-  border-radius: 0px;
-  border-top-left-radius: 0px !important ;
-  border-top-right-radius: 0px !important ;
+  border: 10px solid #25225f !important;
+  border-radius: 10px;
+  border-top-left-radius: 10px !important ;
+  border-top-right-radius: 10px !important ;
 }
 .abt-card .ant-card-head{
   min-height: 0;
@@ -5428,21 +5451,21 @@ margin-top: 24px;
     left: 9px;
 }
 .facility-tab .ant-tabs-tab{
-  background: #f9f9f9;
+  background: #ed9a4bf5;
 }
 .facility-tab .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab{
   margin: 4px 0 0 0;
 }
 .facility-tab .ant-tabs-tab.ant-tabs-tab-active {
   color: #fff;
-  background-color: #1b96c0;
+  background-color: #25225f;
   
 }
 .facility-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
   color: #fff;
 }
 .facility-tab .ant-tabs-tab-btn{
-  color: #1b96c0;
+  color: #25225f;
 }
 .facility-tab .ant-tabs-tab-btn:after {
   content: "\f105";
@@ -5463,6 +5486,7 @@ margin-top: 24px;
 padding-bottom: 24px;
 }
 .faci-card{
+  box-shadow: 0 0 6px 0 #ed9a4bf5, 0 0 0 0 #ed9a4bf5;
   border-radius: 10px !important;
 }
 .faci-card .ant-card-body{
@@ -5475,15 +5499,20 @@ padding-bottom: 24px;
   padding: 0px;
 }
 .faci-card {
-  border: 1px solid #1b96c0 !important;
+  box-shadow: 0 0 6px 0 #070001, 0 0 0 0 #000;
+  /* border: 1px solid #1b96c0 !important; */
 }
 
 /*footer*/
 .c-footer{
-  background-color: #2a5ea9;
+  padding: 4% 0% 4% 0%;
+  background-color: #25225f;
 }
 .c-footer hr{
   color: rgb(196 196 196 / 58%);
+}
+.adress-block {
+    padding: 2% 0% 2% 0%;
 }
 .c-footer p{
   font-size: 0.75rem;
@@ -5540,7 +5569,7 @@ button.close {
 
 /*about-us-tab*/
 .about-us-tab .ant-tabs-tab{
-  background: #ffffff;
+  background-color: #ed9a4bf5;
   padding: 8px 70px 8px 9px ;
 }
 .about-us-tab .ant-tabs > .ant-tabs-nav, .ant-tabs > div > .ant-tabs-nav {
@@ -5552,14 +5581,14 @@ button.close {
 }
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active {
   color: #fff;
-  background-color: #1b96c0;
+  background-color: #25225f;
   
 }
 .about-us-tab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
   color: #fff;
 }
 .about-us-tab .ant-tabs-tab-btn{
-  color: #1b96c0;
+  color: #25225f;
 }
 .about-us-tab .ant-tabs-tab-btn:after {
   content: "\f105";
@@ -5584,10 +5613,13 @@ padding-bottom: 24px;
   display: block;
   width: 5px;
   height: 35px;
-  background-color: #1b96c0;
+  background-color: #25225f;
   position: absolute;
   top: 0;
   left: 0;
+}
+.shdw {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.7);
 }
 
 .caption1 h1 {

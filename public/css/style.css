@@ -4634,13 +4634,19 @@ textarea.form-control.is-invalid {
     color: #343f52;
     text-align: left;
     list-style: none;
-    background-color: #1b96c0 !important;
+    background-color: #25225f !important;
     background-clip: none !important;
     border: 0 !important;
     box-shadow: none !important;
     border-radius: 0 !important;
     border-bottom-left-radius: 0.5rem !important;
     border-bottom-right-radius: 0.5rem !important;
+}
+
+.dropdown-item:hover {
+    outline: 0;
+    color: #25225f !important;
+    background: #ed9a4bf5 !important;
 }
 
 .dropdown-menu[data-bs-popper] {

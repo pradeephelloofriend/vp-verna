@@ -16,7 +16,7 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
   };
     return (
         <>
-            <div className="top-header-area">
+            <div className="top-header-area bg-c-orange">
                 <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-lg-4">
@@ -27,11 +27,11 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
                         <div className="col-lg-8">
                             <div className="header-content-right">
                                 
-                                    <a href="tel:+822456974" className="me-xl-8 text-c-blue">
+                                    <a href="tel:+822456974" className="me-xl-8">
                                     <i className="fa fa-mobile me-xl-1"></i>
                                         Call Us For Inquiry: +91 86688 67032
                                     </a>
-                                    <a href="mailto:contact@vpdongurlithane.com" className="me-xl-8 text-c-blue">
+                                    <a href="mailto:contact@vpdongurlithane.com" className="me-xl-8">
                                     <i className="fa fa-envelope-o me-xl-1"></i>
                                         Email: contact@vpdongurlithane.com
                                     </a>

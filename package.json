@@ -1,5 +1,5 @@
 {
-  "name": "vp-dongri",
+  "name": "vp-verna",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pradeephelloofriend/vp-nagoa.git"
+    "url": "git+https://github.com/pradeephelloofriend/vp-verna.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pradeephelloofriend/vp-nagoa/issues"
+    "url": "https://github.com/pradeephelloofriend/vp-verna/issues"
   },
-  "homepage": "https://github.com/pradeephelloofriend/vp-nagoa#readme",
+  "homepage": "https://github.com/pradeephelloofriend/vp-verna#readme",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@mui/icons-material": "^5.2.0",
