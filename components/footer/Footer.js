@@ -36,10 +36,10 @@ import {selectFootData} from '../../redux/footer/footSelector';
                      <hr className="mt-0 mb-2" />
                      <div className="text-center">
                             <p className="mb-2 mb-lg-0 text-white adress-block">
-                                <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> Village Panchayat Dongurli,V.P. Dongurli Thane, Sattri - Goa</span>
-                                <span className='mr-5'><i className="fa fa-phone" aria-hidden="true"></i> 2379274</span>
-                                <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> contact@vpdongurlithane.com</span></p>
-                         <p className="mb-2 mb-lg-0 text-white">© 2023 VPDongruli. All rights reserved.</p>
+                                <span className='mr-5'><i className="fa fa-map-marker" aria-hidden="true"></i> Village Panchayat Verna, Salcete, Goa.</span>
+                                <span className='mr-5'><i className="fa fa-phone" aria-hidden="true"></i> 0832-2782295 / 7499915202</span>
+                                <span className='mr-5'> <i className="fa fa-envelope-o" aria-hidden="true"></i> vp.vernasarpanch@gmail.com</span></p>
+                         <p className="mb-2 mb-lg-0 text-white">© 2023 VPVerna. All rights reserved.</p>
                      </div>
                  </div>
 

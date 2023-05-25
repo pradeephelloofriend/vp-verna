@@ -21,7 +21,7 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
                     <div className="row align-items-center">
                         <div className="col-lg-4">
                             <div className="header-content-left">
-                                <a>Welcome To Dongruli Panchayat!</a>
+                                <a>Welcome To Verna Panchayat!</a>
                             </div>
                         </div>
                         <div className="col-lg-8">
@@ -29,11 +29,11 @@ const TopHeaderAreaComponent = ({setRegStatus,cUser}) => {
                                 
                                     <a href="tel:+822456974" className="me-xl-8">
                                     <i className="fa fa-mobile me-xl-1"></i>
-                                        Call Us For Inquiry: +91 86688 67032
+                                        Call Us For Inquiry: 0832-2782295 / 7499915202
                                     </a>
-                                    <a href="mailto:contact@vpdongurlithane.com" className="me-xl-8">
+                                    <a href="mailto:vp.vernasarpanch@gmail.com" className="me-xl-8">
                                     <i className="fa fa-envelope-o me-xl-1"></i>
-                                        Email: contact@vpdongurlithane.com
+                                        Email: vp.vernasarpanch@gmail.com
                                     </a>
                                     {/* {cUser!==null?
                                     <a href="#" onClick={()=>handleShow()} className="text-red">
