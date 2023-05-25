@@ -13,6 +13,7 @@ import DetailComponent from '../detail/DetailComponent';
 import FormTabDetailComponent from './FormTabDetailComponent';
 import TabDetailsComponent from '../about-us/TabDetailsComponent';
 import SpinningComponent from '../spin/SpinningComponent';
+import ProccedingComponent from './ProccedingComponent';
 const { TabPane } = Tabs;
 const FormComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKey}) => {
     const [mData,setMdata]=React.useState(null);
@@ -28,20 +29,20 @@ const FormComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKe
             //console.log('filterData',data)
             setMdata(data.node)
         }
-        if(tabKey!==null){
-            //console.log('tabKey',tabKey)
-            async function fetchData() {
-              const cData = await getCertificateData(tabKey) //applo client 
+        // if(tabKey!==null){
+        //     //console.log('tabKey',tabKey)
+        //     async function fetchData() {
+        //       const cData = await getCertificateData(tabKey) //applo client 
         
-              // 👇️ only update state if component is mounted
-              if (isApiSubscribed) {
-                setCrData(cData)
-              }
-            }
-            fetchData()
+        //       // 👇️ only update state if component is mounted
+        //       if (isApiSubscribed) {
+        //         setCrData(cData)
+        //       }
+        //     }
+        //     fetchData()
             
             
-        }
+        // }
         /**Responsive tab */
         function handleResize() {
             if (window.matchMedia("(min-width: 1400px)").matches) {
@@ -84,7 +85,7 @@ const FormComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKe
     
     
    const {title,desc,iscomplete}= router.query
-   //console.log('crData',crData)
+   console.log('mData',mData)
   return (
     <>
           <section className="wrapper bg-gray">
@@ -99,11 +100,10 @@ const FormComponent = ({tabKey,routeTitle,menuData,cDetailData,routeUri,setTabKe
                                             <div className="caption1">
                                                 <h1>{t.node.label}</h1>
                                             </div>
-                                            {crData!==null?iscomplete=='Yes'?
-                                           
-                                            <FormTabDetailComponent  cDetailData={crData}/>
+                                            {t.node.route.code=='proceedings'?
+                                              <ProccedingComponent/>
                                             
-                                            : <TabDetailsComponent/> :<SpinningComponent/>  }
+                                            : <TabDetailsComponent/> }
                                         </div>
                                         
                                  </TabPane>

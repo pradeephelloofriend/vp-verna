@@ -22,23 +22,13 @@ const Index = () => {
         <>
             <OtherLinks />
             <Banner/>
-            {/* <BigMenuComponent/> */}
-           { /*<OtherLinks noticeData={noticeData} />*/}
             <AboutUsBlockComponent/>
             <ProfileComponent/>
             <NewsSectionComponent/>
-            {/* <OtherLinksComponent/> */}
             <PopulationSectionComponent/>
             <FacilitesComponent/>
             <Schemes />
-            {/*<AddBlock stepData={stepData} />
-            <Scheme schemeData={data1} />
-            <EventsComponent eventdata={eventdata}/>
-            <ProductComponent aboutData={aboutData} /> {/* ABOUT AREA*/}
             <MapComponent/>
-            {/*<ContactComponent/>*/}
-            {/*<SmallAreaComponent/>*/}
-            {/*<ContactComponent/>*/}
 
         </>
     )
