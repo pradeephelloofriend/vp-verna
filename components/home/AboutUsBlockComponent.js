@@ -9,7 +9,7 @@ import SwiperCore, {
   Pagination
 } from 'swiper';
 import { getVillageDataShort } from '../../lib/api'
-import abt1 from '../../public/img/stockimg.jpg'
+import abt1 from '../../public/img/about/vpverna.jpg'
 
 const AboutUsBlockComponent = () => {
   const [nData,setNdata]=React.useState(null)

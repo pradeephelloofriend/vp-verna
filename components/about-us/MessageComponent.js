@@ -30,8 +30,13 @@ const MessageComponent = () => {
 
           <div className='desk-image'>
           
-          <Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1670563789/vp/dongrim/team/dong-sarpanch-min_u6tdkd.jpg'} alt='' height={200} width={200} />
-            
+          {/* <Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1670563789/vp/dongrim/team/dong-sarpanch-min_u6tdkd.jpg'} alt='' height={200} width={200} /> */}
+          {crData !== null ?
+                <Image
+                // src={'https://res.cloudinary.com/depg2aab2/image/upload/v1667626182/vp/nagoa/user-min_dbcgcb.jpg'} 
+                src={crData.image.sourceUrl} 
+                alt="" height={200} width={200} />
+                                :<></>}     
           </div>
           <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
         </Card>
