@@ -17,7 +17,7 @@ import OtherLinksComponent from '../components/home/OtherLinksComponent';
 
 const Index = () => {
     
-    
+    //Sameer change
     return (
         <>
             <OtherLinks />
