@@ -1,20 +1,38 @@
 import React from 'react'
-
-import BreadcumbComponent from '../../components/breadcumb/BreadcumbComponent'
-import b from '../../public/img/breadcumb/b-page.jpg'
+import { connect } from 'react-redux';
+import { setUserUploadStatus,setRegCertData } from '../../redux/menu/menuAction';
 import { useRouter } from 'next/router';
-import AboutUsComponent from '../../components/about-us/AboutUsComponent';
-const village = () => {
+import Committee from '../../components/committees/CommitteeComponent';
+import TabDetailsComponent from '../../components/about-us/TabDetailsComponent';
+export async function getServerSideProps(context) {
+  // console.log('context',context);
+  const cDataQuery = await fetch(`${process.env.WP_API_PATH}committee?slug=${context.query}`,{
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.JWT_TOKEN}` 
+    }
+  })
+ 
+const cmData = await cDataQuery.json()
+return { props: {cmData} }
+}
+const village = ({setRegCertData,cmData}) => {
   const router=useRouter()
-    
+  // setRegCertData(null)  
     const tempTitle=router.query.title;
-    //console.log('router',tempTitle)
+    // console.log('router-cmdata',cmData)
+    // console.log('router-cmdata',router)
   return (
     <>
-    <BreadcumbComponent pageInfo={{title:tempTitle,desc:"History about the beginnings of the panchayat",img:b}}  />
-    <AboutUsComponent routeTitle={tempTitle}/>
+
+    <Committee routeTitle={tempTitle} routeUri={router.query.uri} cDetailData={cmData[0]}/>
     </>
   )
 }
 
-export default village
+const mapDispatchToProps=dispatch=>({
+  setUserUploadStatus:data=>dispatch(setUserUploadStatus(data)),
+  setRegCertData:(data)=>dispatch(setRegCertData(data))
+})
+export default connect(null,mapDispatchToProps) (village)

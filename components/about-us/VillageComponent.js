@@ -28,9 +28,9 @@ const VillageComponent = () => {
       
         {crData!==null?
         <div className=''>
-        <Card className='abt-card mb-5' title={<span className='text-white abt-title-box'><Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1665070376/vp/nagoa/info_hzkwx2.png'} alt='' height={35} width={35} /><span className='abt-card-head-title'>About VP Dongurli-Thane</span></span>}>
-        <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
-        <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.otherDesc:<></>}} />
+        <Card className='abt-card mb-5' title={<span className='text-white abt-title-box'><Image src={'https://res.cloudinary.com/depg2aab2/image/upload/v1665070376/vp/nagoa/info_hzkwx2.png'} alt='' height={35} width={35} /><span className='abt-card-head-title'>About VP Verna</span></span>}>
+        <div className="mb-3" style={{ fontSize: 'large' }} dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
+        <div className="mb-3" style={{ fontSize: 'large' }} dangerouslySetInnerHTML={{ __html:crData!==null?crData.otherDesc:<></>}} />
             
             <Image src={crData.image.sourceUrl} alt='' height={400} width={1207} />
            

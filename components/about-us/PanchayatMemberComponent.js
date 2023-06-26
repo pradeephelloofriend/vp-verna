@@ -27,14 +27,14 @@ const PanchayatMemberComponent = () => {
             isApiSubscribed = false;
           };
       },[])
-    //   console.log('pmData Panch Members',pmData)
+      console.log('pmData Panch Members',pmData)
   return (
       <>
           <div className='pm-block h-scroll'>
             <Spin spinning={isLoading}>
             <Tree label={<div>
-                <Button style={{display:'none'}} className='team-level'>{ pmData ? pmData.directorateOfPanchayats.fieldGroupName :<></>}</Button>
-                    <div className='team-content-block' style={{display:'none'}}>
+                <Button className='team-level'>{ pmData ? pmData.directorateOfPanchayats.fieldGroupName :<></>}</Button>
+                    <div className='team-content-block' >
                         <div className="team-block">
                             <div className="team-image">
                             {pmData !== null ?
@@ -54,7 +54,7 @@ const PanchayatMemberComponent = () => {
                 
             }>
                 <TreeNode label={<div>
-                    <Button style={{display:'none'}} className='team-level'>{ pmData ? pmData.directorateOfPanchayats.blockDevelopmentOfficer.fieldGroupName :<></>}</Button>
+                    <Button className='team-level'>{ pmData ? pmData.directorateOfPanchayats.blockDevelopmentOfficer.fieldGroupName :<></>}</Button>
                     <div className='team-content-block'>
                         <div className="team-block">
                             <div className="team-image">
@@ -106,7 +106,7 @@ const PanchayatMemberComponent = () => {
                     {d.member!==null ? d.member.map((j,jx)=>
                     <TreeNode label={
                         <div key={jx}>
-                            <Button className='team-level'>Ward No.{ j.wordNo ? j.wordNo :<></>}</Button>
+                            <Button className='team-level'>Ward No. { j.wardNo ? j.wardNo :<></>}</Button>
                             <div className='team-content-block'>
                                 <div className="team-block">
                                     <div className="team-image">

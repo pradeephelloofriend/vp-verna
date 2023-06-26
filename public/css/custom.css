@@ -5727,7 +5727,7 @@ margin-bottom: 18px;
   margin: 0px;
 }
 
-.scheme-block .ant-table-thead > tr > th{
+.committee-dtls .ant-table-thead > tr > th{
   background: #25225f;
   padding: 7px 12px;
   font-weight: 600;
@@ -5877,4 +5877,7 @@ border: 0px;
   
   top: 90% !important;
   
+}
+.card-mg {
+  margin: 4% 1% 4% 2%;
 }

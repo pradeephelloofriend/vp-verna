@@ -24,7 +24,7 @@ const gallery = ({setRegCertData,cData}) => {
   const router=useRouter()
   setRegCertData(null)  
     const tempTitle=router.query.title;
-    //console.log('router',cData[0])
+    // console.log('router',router)
   return (
     <>
     <BreadcumbComponent pageInfo={{title:tempTitle,desc:router.query.desc,img:b}}  />

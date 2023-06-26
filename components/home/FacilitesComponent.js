@@ -86,7 +86,7 @@ const FacilitesComponent = () => {
                                     {i.infrastructure.infraDetails!==null ? i.infrastructure.infraDetails.map((d,ix)=>
                                         <div key={ix} className='col-md-4 col-12'>
                                             <Card 
-                                                title={d.name} className='faci-card link-ct-blue mb-0 text-center'
+                                                title={d.name} className='faci-card link-ct-blue mb-0 text-center card-mg'
                                                 hoverable
                                                 style={{ width: imgWidth }}
                                                 cover={

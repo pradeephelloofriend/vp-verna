@@ -38,7 +38,7 @@ const MessageComponent = () => {
                 alt="" height={200} width={200} />
                                 :<></>}     
           </div>
-          <div className="mb-3" dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
+          <div className="mb-3" style={{ fontSize: 'large' }} dangerouslySetInnerHTML={{ __html:crData!==null?crData.desc:<></>}} />
         </Card>
   </div>
       :
