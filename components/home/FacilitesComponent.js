@@ -19,20 +19,20 @@ const FacilitesComponent = () => {
             //console.log("min-width: 1400px")
           } else if(window.matchMedia("(min-width: 1200px)").matches) {
             setTablLayout("left")
-            setImgWidth(350)
+            setImgWidth(250)
             // Viewport is greater than 700 pixels wide
             //console.log("min-width: 1200px")
           }else if(window.matchMedia("(min-width: 992px)").matches){
             setTablLayout("left")
-            setImgWidth(350)
+            setImgWidth(250)
             //console.log("min-width: 1200px")
           }else if(window.matchMedia("(min-width: 768px)").matches){
             setTablLayout("top")
-            setImgWidth(360)
+            setImgWidth(250)
             //console.log("min-width: 768px")
           }else if(window.matchMedia("(min-width: 576px)").matches){
             setTablLayout("top")
-            setImgWidth(360)
+            setImgWidth(250)
             //console.log("min-width: 768px")
           }else{
             setTablLayout("top")
@@ -84,7 +84,7 @@ const FacilitesComponent = () => {
                             <TabPane tab={i.title} key={idx}>
                                 <div className='row'>
                                     {i.infrastructure.infraDetails!==null ? i.infrastructure.infraDetails.map((d,ix)=>
-                                        <div key={ix} className='col-md-4 col-12'>
+                                        <div key={ix} className='col-md-4 col-12'  style={{ marginRight: '29px' }}>
                                             <Card 
                                                 title={d.name} className='faci-card link-ct-blue mb-0 text-center card-mg'
                                                 hoverable
